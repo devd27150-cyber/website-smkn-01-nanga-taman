@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Galeri SMKN 1 Nanga Taman</title>
+
+    <style>
+
+        * {
+
+            margin: 0;
+
+            padding: 0;
+
+            box-sizing: border-box;
+
+        }
+
+        body {
+
+            font-family: Arial, sans-serif;
+
+            background-color: #eef7ff;
+
+            color: #16345b;
+
+        }
+
+        /* Bagian Header */
+
+        header {
+
+            background: linear-gradient(135deg, #0755a5, #19a9dc);
+
+            color: white;
+
+            text-align: center;
+
+            padding: 35px 15px;
+
+        }
+
+        header h1 {
+
+            margin-bottom: 10px;
+
+        }
+
+        header p {
+
+            font-size: 16px;
+
+        }
+
+        /* Bagian Galeri */
+
+        .container {
+
+            max-width: 1100px;
+
+            margin: 35px auto;
+
+            padding: 20px;
+
+        }
+
+        .container h2 {
+
+            text-align: center;
+
+            color: #0877bb;
+
+            margin-bottom: 10px;
+
+        }
+
+        .deskripsi {
+
+            text-align: center;
+
+            margin-bottom: 30px;
+
+            color: #555;
+
+        }
+
+        .galeri {
+
+            display: grid;
+
+            grid-template-columns: repeat(3, 1fr);
+
+            gap: 20px;
+
+        }
+
+        .foto {
+
+            background-color: white;
+
+            border-radius: 12px;
+
+            overflow: hidden;
+
+            box-shadow: 0 4px 12px rgba(0, 60, 120, 0.15);
+
+            transition: transform 0.3s;
+
+        }
+
+        .foto:hover {
+
+            transform: translateY(-5px);
+
+        }
+
+        .foto img {
+
+            width: 100%;
+
+            height: 220px;
+
+            object-fit: cover;
+
+            display: block;
+
+        }
+
+        .keterangan {
+
+            padding: 15px;
+
+            text-align: center;
+
+        }
+
+        .keterangan h3 {
+
+            color: #0877bb;
+
+            margin-bottom: 8px;
+
+        }
+
+        .keterangan p {
+
+            color: #666;
+
+            font-size: 14px;
+
+        }
+
+        /* Bagian Footer */
+
+        footer {
+
+            background-color: #0755a5;
+
+            color: white;
+
+            text-align: center;
+
+            padding: 20px;
+
+            margin-top: 30px;
+
+        }
+
+        /* Tampilan Tablet */
+
+        @media (max-width: 768px) {
+
+            .galeri {
+
+                grid-template-columns: repeat(2, 1fr);
+
+            }
+
+        }
+
+        /* Tampilan HP */
+
+        @media (max-width: 480px) {
+
+            .galeri {
+
+                grid-template-columns: 1fr;
+
+            }
+
+            .foto img {
+
+                height: 230px;
+
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+
+        <h1>GALERI SEKOLAH</h1>
+
+        <p>SMK Negeri 1 Nanga Taman</p>
+
+    </header>
+
+    <main class="container">
+
+        <h2>Galeri Foto Kegiatan</h2>
+
+        <p class="deskripsi">
+
+            Dokumentasi kegiatan dan lingkungan sekolah kami.
+
+        </p>
+
+        <div class="galeri">
+
+            <!-- Foto 1 -->
+
+            <div class="foto">
+
+                <img src="images/Foto6.jpeg" alt="Kegiatan sekolah 1">
+
+                <div class="keterangan">
+
+                    <h3>Kegiatan Sekolah</h3>
+
+                    <p>Dokumentasi kegiatan siswa.</p>
+
+                </div>
+
+            </div>
+
+            <!-- Foto 2 -->
+
+            <div class="foto">
+
+                <img src="images/Foto3.jpeg" alt="Kegiatan sekolah 2">
+
+                <div class="keterangan">
+
+                    <h3>Aktivitas Siswa</h3>
+
+                    <p>Kegiatan belajar dan kebersamaan.</p>
+
+                </div>
+
+            </div>
+
+            <!-- Foto 3 -->
+
+            <div class="foto">
+
+                <img src="images/Foto1.jpeg" alt="Kegiatan sekolah 3">
+
+                <div class="keterangan">
+
+                    <h3>Agribisnis Tanaman</h3>
+
+                    <p>Praktik pembelajaran bidang pertanian.</p>
+
+                </div>
+
+            </div>
+
+            <!-- Foto 4 -->
+
+            <div class="foto">
+
+                <img src="images/Foto4.jpeg" alt="Kegiatan sekolah 4">
+
+                <div class="keterangan">
+
+                    <h3>Pemasaran</h3>
+
+                    <p>praktik pembelajaran bidang Pemasaran.</p>
+
+                </div>
+
+            </div>
+
+            <!-- Foto 5 -->
+
+            <div class="foto">
+
+                <img src="images/Foto5.jpeg" alt="Kegiatan sekolah 5">
+
+                <div class="keterangan">
+
+                    <h3>Ekstrakurikuler</h3>
+
+                    <p>Pengembangan bakat dan minat siswa.</p>
+
+                </div>
+
+            </div>
+
+            <!-- Foto 6 -->
+
+            <div class="foto">
+
+                <img src="images/Foto2.jpeg" alt="Kegiatan sekolah 6">
+
+                <div class="keterangan">
+
+                    <h3>Kebersamaan</h3>
+
+                    <p>Momen kebersamaan keluarga sekolah.</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer>
+
+        <p>&copy; 2026 SMK Negeri 1 Nanga Taman</p>
+
+    </footer>
+
+</body>
+
+</html>
